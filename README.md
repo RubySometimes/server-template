@@ -1,3 +1,3 @@
-# Runescape Private Server Template
-A responsive private server template that can be easily
+# Server Template
+A responsive front-end server template that can be easily
 customized.
