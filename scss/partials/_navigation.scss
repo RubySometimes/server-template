@@ -1,0 +1,119 @@
+/**
+ * Styling for the navigation portion of the template.
+ */
+
+// imports
+@import "../variables";
+
+// local variables
+$navigation-bg: darken($body-background, 10%);
+$navigation-color: $body-color;
+$navigation-border: darken($navigation-bg, 10%);
+$navigation-sticky: true;
+$navigation-link-underline: false;
+
+// core
+nav {
+  @if $navigation-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  } @else {
+    float: left;
+  }
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 3.5rem;
+  color: $navigation-color;
+  background: $navigation-bg;
+  border-bottom: 1px solid black;
+
+  .left { float: left; }
+  .right {float: right; }
+
+  .hide { display: none; }
+  .show { display: inline-block; }
+
+  // link styling on the navigation bar only
+  a:link, a:visited, a:active {
+    @if $navigation-link-underline { text-decoration: underline; }
+    @else { text-decoration: none; }
+  }
+
+  h1 {
+    margin: .8rem .5rem 0 0;
+    padding: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+      margin: 1.2rem 0 0 .5rem;
+    }
+  }
+
+  ul.right {
+    @extend ul;
+
+    li:first-child {
+      display: inline-block;
+      margin: 1.2rem .5rem 0 0;
+    }
+  }
+
+  .hide-mobile {
+    display: block;
+    @include responsive(mobile) { display: none; }
+  }
+
+  .show-mobile {
+    display: none;
+    @include responsive(mobile) { display: block; }
+
+    i.fa-bars {
+      margin-top: .7rem;
+      font-size: 1.9rem;
+    }
+
+    i.fa-bars:hover {
+      cursor: pointer;
+      color: lighten($navigation-color, 15%);
+    }
+  }
+
+  #hamburger-menu {
+    float: left;
+    width: 100%;
+
+    ul {
+      float: right;
+      width: 100%;
+      text-align: center;
+
+      li:first-child {
+        margin-top: 1rem;
+      }
+
+      li {
+        display: block;
+        margin: 0;
+        padding: 0;
+
+        a:link, a:visited, a:active {
+          display: block;
+          padding: 1rem 0;
+          border-top: 1px solid black;
+        }
+
+        a:hover {
+          background: lighten($navigation-bg, 1%)
+        }
+      }
+    }
+  }
+}

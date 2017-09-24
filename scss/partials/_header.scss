@@ -1,0 +1,77 @@
+/**
+ * Styling for the header portion of the template.
+ */
+
+// imports
+@import "../variables";
+
+// local variables
+$header-bg: darken($body-background, 5%);
+$online: #209246;
+$offline: #ff5454;
+
+// core
+header {
+  float: left;
+  margin-top: 3.5rem;
+  padding: 4.5rem 0 3rem 0;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 400px;
+  text-align: center;
+  background: $header-bg;
+  line-height: 1.5rem;
+
+  h1 {
+    display: inline-block;
+    margin: 0;
+    line-height: 2rem;
+  }
+
+  .blurb {
+    margin: auto;
+    width: 60%;
+    min-width: 500px;
+
+    @include responsive(tablet) {
+      width: 100%;
+      min-width: 0;
+    }
+
+    a.play {
+      &:visited, &:active, &:link {
+        display: inline-block;
+        margin: 1rem 1rem 0 0;
+        padding: .5rem 1rem;
+        color: $body-color;
+        text-decoration: none;
+        border-radius: 2rem;
+        background: rgba(0, 0, 0, .8);
+        transition: background .25s ease-out;
+      }
+
+      &:hover {
+        background: black;
+      }
+    }
+  }
+
+  .label {
+    float: right;
+    display: inline-block;
+    padding: .1rem 1rem;
+    margin: -.2rem 0 0 .8rem;
+    font-size: .9rem;
+    border-radius: 2rem;
+  }
+
+  .online {
+    color: $header-bg;
+    background-color: $online;
+  }
+
+  .offline {
+    color: $header-bg;
+    background-color: $offline;
+  }
+}

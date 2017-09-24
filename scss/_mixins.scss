@@ -1,0 +1,14 @@
+// Mixins
+
+// imports
+@import "variables";
+
+// core
+// take query as a parameter. IE: mobile
+@mixin responsive($query) {
+  @if $query == desktop {
+    @media only screen and (min-width: map-get($queries, $query)) { @content; }
+  } @else {
+    @media only screen and (max-width: map-get($queries, $query)) { @content; }
+  }
+}

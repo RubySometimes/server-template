@@ -1,0 +1,21 @@
+// Header
+
+//- content
+header
+  .container-fixed
+      h1
+        =serverName
+        if online
+          .label.online Online
+        else
+          .label.offline Offline
+      .blurb
+        p.
+          Bacon ipsum dolor amet nostrud porchetta ham, shoulder
+          meatloaf tri-tip ham hock. Pork loin in eu tri-tip ad
+          venison elit strip steak tongue aliqua. Leberkas filet
+          mignon anim reprehenderit, exercitation bresaola pastrami
+          cillum magna jerk doner chicken deserunt. Eiusmod dolor kevin,
+          mollit pariatur strip steak minim aute kielbasa.
+        a.play(href='index.html') Play Now
+        a(href='index.html') Get Started

@@ -1,0 +1,40 @@
+// Variables
+
+// Note:
+
+// These variables are the ones that are potentially global.
+// variables to specific sections of pages are defined in their
+// `partials/` equivalent.  IE: navigation-bg is in `partials/_navigation.scss`
+
+// colors
+$black: #111;
+$white: #fff;
+
+// theme colors
+$theme: #5eaad7;
+$theme-hover: darken($theme, 12%);
+
+// default colors
+$body-color: #c0c0c0;
+$body-background: #242424;
+
+// font sizes
+$small-font-size: .9rem;
+$default-font-size: 1rem;
+$large-font-size: 1.5rem;
+
+// font families
+$sans-serif: Arial, verdana, sans-serif;
+
+// containers
+$container-width: 85%;
+$container-width-tablet: 90%;
+$container-width-mobile: 92%;
+$container-max-width: 1200px;
+
+// queries
+$queries: (xs-mobile: 568px,
+           mobile: 668px,
+           tablet: 768px,
+           laptop: 1048px,
+           desktop: 1264px);

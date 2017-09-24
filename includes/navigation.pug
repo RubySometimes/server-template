@@ -1,0 +1,35 @@
+// Navigation
+
+//- includes
+include variables
+
+//- mixins
+//- makes a new link in an ul or ol
+mixin link(text, href)
+  li
+    a(href=href)= text
+
+//- content
+nav
+  .container-fixed
+    a(href='#')
+      h1.left= serverName
+    .hide-mobile
+      ul.left
+        +link('Home', 'index.html')
+        +link('Forums', 'index.html')
+        +link('Hiscores', 'index.html')
+      ul.right
+        +link('Login', 'index.html')
+        | or
+        +link('Sign up', 'index.html')
+    .show-mobile.right
+      i.fa.fa-bars(aria-hidden='true', onclick='showHamburgerMenu()')
+  #hamburger-menu.hide
+    .container-fixed
+      ul.right
+        +link('Home', 'index.html')
+        +link('Forums', 'index.html')
+        +link('Hiscores', 'index.html')
+        +link('Login', 'index.html')
+        +link('Sign up', 'index.html')

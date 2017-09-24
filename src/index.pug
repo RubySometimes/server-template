@@ -1,0 +1,58 @@
+doctype
+//
+  RubyGuy's RSPS Customizable Template
+
+  A very basic, highly customizable, and responsive RSPS template.
+
+  @author RubyGuy (RuneServer)
+  @date 22 September 2017
+html(lang='en')
+  head
+    include ../includes/head
+  body
+    include ../includes/navigation
+    include ../includes/header
+
+    // Main
+    main
+      .container-fixed
+        #wrapper
+          .content
+            .news-article
+              h1 Bacon Ipsum
+              .info Sep 24, 2017 - 12:00 AM - by #[a(href='#') RubyGuy]
+              .contents.
+                Pastrami strip steak turkey bresaola boudin.
+                Tri-tip porchetta pork belly, salami cupim corned
+                beef ground round pig drumstick pastrami shank boudin
+                frankfurter. Tail prosciutto doner, beef tri-tip shank
+                jowl chuck. Andouille short ribs swine prosciutto
+                shankle, turducken landjaeger pancetta tongue spare
+                ribs strip steak. Spare ribs tenderloin tongue pork chop
+                salami, corned beef sausage ball tip turkey tail shank.
+            .news-article
+              h1 Bacon Ipsum
+              .info Sep 24, 2017 - 12:00 AM - by #[a(href='#') RubyGuy]
+              .contents.
+                Pastrami strip steak turkey bresaola boudin.
+                Tri-tip porchetta pork belly, salami cupim corned
+                beef ground round pig drumstick pastrami shank boudin
+                frankfurter. Tail prosciutto doner, beef tri-tip shank
+                jowl chuck. Andouille short ribs swine prosciutto
+                shankle, turducken landjaeger pancetta tongue spare
+                ribs strip steak. Spare ribs tenderloin tongue pork chop
+                salami, corned beef sausage ball tip turkey tail shank.
+          .left-nav
+            include ../includes/leftnav
+          .left-box
+            | Example left box for anything else....
+
+    include ../includes/footer
+
+    //- JQuery CDN
+    script(src='https://code.jquery.com/jquery-3.2.1.min.js',
+           integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=',
+           crossorigin='anonymous')
+
+    //- Hamburger script
+    script(src='js/hamburger.js')

@@ -1,0 +1,18 @@
+// Navigation
+
+//- includes
+include variables
+
+//- mixins
+//- makes a new link in an ul or ol
+mixin link(text, href)
+  li
+    a(href=href)= text
+
+//- content
+ul
+  +link('Forums', '#')
+  +link('Polls', '#')
+  +link('Hiscores', '#')
+  +link('Grand Exchange', '#')
+  +link('Donate', '#')

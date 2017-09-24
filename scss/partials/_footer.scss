@@ -1,0 +1,40 @@
+/**
+ * Styling for the footer portion of the template.
+ */
+
+// imports
+@import "../variables";
+
+// local variables
+$footer-bg: darken($body-background, 8%);
+
+// core
+footer {
+  float: left;
+  box-sizing: border-box;
+  margin-top: 6rem;
+  width: 100%;
+  min-height: 250px;
+  color: darken($body-color, 25%);
+  font-size: $small-font-size;
+  background: $footer-bg;
+  line-height: 1.5rem;
+
+  @include responsive(tablet) { text-align: center; }
+
+  .container-fixed {
+    padding: 2rem 0;
+  }
+
+  .centered {
+    display: block;
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+
+    i.fa {
+      font-size: 2rem;
+      letter-spacing: 1rem;
+    }
+  }
+}

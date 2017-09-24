@@ -1,0 +1,48 @@
+/**
+ * Styling for a template that I built for the Rune-Server community.
+ *
+ * @author RubyGuy
+ * @date 22 September 2017
+ */
+
+// imports
+@import "variables";
+@import "mixins";
+@import "partials/navigation";
+@import "partials/header";
+@import "partials/main";
+@import "partials/footer";
+
+// body element styling
+body {
+  margin: 0;
+  padding: 0;
+  font: $default-font-size $sans-serif;
+  color: $body-color;
+  background: $body-background;
+}
+
+// link styling
+a:link, a:active, a:visited { color: $theme; }
+a:hover { color: $theme-hover; }
+
+// containers
+// parent container class
+.container {
+  margin: auto;
+  box-sizing: border-box;
+}
+
+// container that isn't 100% of the screen.
+.container-fixed {
+  @extend .container;
+  width: $container-width;
+  max-width: $container-max-width;
+  @include responsive(mobile) { width: $container-width-mobile; }
+}
+
+// container that has no max-width.
+.container-fluid {
+  @extend .container;
+  width: $container-width;
+}

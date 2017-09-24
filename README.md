@@ -1,2 +1,3 @@
-# server-template
-An easily customizable and responsive server/website template.
+# Runescape Private Server Template
+A responsive private server template that can be easily
+customized.
