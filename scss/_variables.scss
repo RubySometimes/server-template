@@ -41,3 +41,18 @@ $queries: (xs-mobile: 568px,
            tablet: 768px,
            laptop: 1048px,
            desktop: 1264px);
+
+// partials variables
+// navigation
+$navigation-bg: darken($body-background, 10%);
+$navigation-color: $body-color;
+$navigation-border: darken($navigation-bg, 10%);
+$navigation-sticky: true;
+$navigation-link-underline: false;
+
+// header
+$header-bg: darken($body-background, 5%);
+
+// footer
+$footer-bg: darken($body-background, 8%);
+$footer-text-alignment: center;

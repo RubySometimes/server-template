@@ -5,13 +5,6 @@
 // imports
 @import "../variables";
 
-// local variables
-$navigation-bg: darken($body-background, 10%);
-$navigation-color: $body-color;
-$navigation-border: darken($navigation-bg, 10%);
-$navigation-sticky: true;
-$navigation-link-underline: false;
-
 // core
 nav {
   @if $navigation-sticky {
