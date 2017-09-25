@@ -52,6 +52,9 @@ $navigation-link-underline: false;
 
 // header
 $header-bg: darken($body-background, 5%);
+$header-button-background: rgba(0, 0, 0, .7);
+$header-button-background-hover: rgba(0, 0, 0, 1);
+$header-button-color: $body-color;
 
 // footer
 $footer-bg: darken($body-background, 8%);

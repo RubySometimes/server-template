@@ -38,15 +38,15 @@ header {
         display: inline-block;
         margin: 1rem 1rem 0 0;
         padding: .5rem 1rem;
-        color: $body-color;
+        color: $header-button-color;
         text-decoration: none;
         border-radius: 2rem;
-        background: rgba(0, 0, 0, .7);
+        background: $header-button-background;
         transition: background .25s ease-out;
       }
 
       &:hover {
-        background: black;
+        background: $header-button-background-hover;
       }
     }
   }
