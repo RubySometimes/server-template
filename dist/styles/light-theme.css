@@ -1,0 +1,280 @@
+/**
+ * Styling for a template that I built for the Rune-Server community.
+ *
+ * @author RubyGuy
+ * @date 22 September 2017
+ */
+/**
+ * Styling for the navigation portion of the template.
+ */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 3.5rem;
+  color: #c0c0c0;
+  background: #242424;
+  border-bottom: 1px solid black; }
+  nav .left {
+    float: left; }
+  nav .right {
+    float: right; }
+  nav .hide {
+    display: none; }
+  nav .show {
+    display: inline-block; }
+  nav a:link, nav a:visited, nav a:active {
+    text-decoration: none; }
+  nav h1 {
+    margin: .8rem .5rem 0 0;
+    padding: 0; }
+  nav ul, nav ul.right {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+    nav ul li, nav ul.right li {
+      display: inline-block;
+      margin: 1.2rem 0 0 .5rem; }
+  nav ul.right li:first-child {
+    display: inline-block;
+    margin: 1.2rem .5rem 0 0; }
+  nav .hide-mobile {
+    display: block; }
+    @media only screen and (max-width: 668px) {
+      nav .hide-mobile {
+        display: none; } }
+  nav .show-mobile {
+    display: none; }
+    @media only screen and (max-width: 668px) {
+      nav .show-mobile {
+        display: block; } }
+    nav .show-mobile i.fa-bars {
+      margin-top: .7rem;
+      font-size: 1.9rem; }
+    nav .show-mobile i.fa-bars:hover {
+      cursor: pointer;
+      color: #e6e6e6; }
+  nav #hamburger-menu {
+    float: left;
+    width: 100%; }
+    nav #hamburger-menu ul {
+      float: right;
+      width: 100%;
+      text-align: center; }
+      nav #hamburger-menu ul li:first-child {
+        margin-top: 1rem; }
+      nav #hamburger-menu ul li {
+        display: block;
+        margin: 0;
+        padding: 0; }
+        nav #hamburger-menu ul li a:link, nav #hamburger-menu ul li a:visited, nav #hamburger-menu ul li a:active {
+          display: block;
+          padding: 1rem 0;
+          border-top: 1px solid black; }
+        nav #hamburger-menu ul li a:hover {
+          background: #272727; }
+
+/**
+ * Styling for the header portion of the template.
+ */
+header {
+  float: left;
+  margin-top: 3.5rem;
+  padding: 4.5rem 0 3rem 0;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 400px;
+  text-align: center;
+  background: lightgray;
+  line-height: 1.5rem; }
+  header h1 {
+    display: inline-block;
+    margin: 0;
+    line-height: 2rem; }
+  header .blurb {
+    margin: auto;
+    width: 60%;
+    min-width: 500px; }
+    @media only screen and (max-width: 768px) {
+      header .blurb {
+        width: 100%;
+        min-width: 0; } }
+    header .blurb a.play:visited, header .blurb a.play:active, header .blurb a.play:link {
+      display: inline-block;
+      margin: 1rem 1rem 0 0;
+      padding: .5rem 1rem;
+      color: #c0c0c0;
+      text-decoration: none;
+      border-radius: 2rem;
+      background: black;
+      transition: background .25s ease-out; }
+    header .blurb a.play:hover {
+      background: rgba(0, 0, 0, 0.8); }
+  header .label {
+    float: right;
+    display: inline-block;
+    padding: .1rem 1rem;
+    margin: -.2rem 0 0 .8rem;
+    font-size: .9rem;
+    border-radius: 2rem; }
+  header .online {
+    color: lightgray;
+    background-color: #209246; }
+  header .offline {
+    color: lightgray;
+    background-color: #ff5454; }
+
+/**
+ * Styling for the main portion of the template.
+ */
+main {
+  float: left;
+  margin: 2rem 0;
+  width: 100%; }
+  main #wrapper {
+    float: left;
+    width: 100%;
+    background: #ececec;
+    border: 1px dotted black; }
+  main aside {
+    float: left;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    width: 25%;
+    border-right: 1px dotted black;
+    border-bottom: 1px dotted black; }
+    @media only screen and (max-width: 668px) {
+      main aside {
+        margin-top: 2rem;
+        width: 100%;
+        border-right: 0;
+        border-top: 1px dotted black; } }
+    main aside ul, main aside nav ul.right, nav main aside ul.right {
+      margin: 0;
+      padding: 0;
+      list-style-type: none; }
+      main aside ul li, main aside nav ul.right li, nav main aside ul.right li {
+        display: block; }
+        main aside ul li a:link, main aside ul li a:visited, main aside ul li a:active {
+          display: block;
+          padding: 1rem;
+          color: #242424;
+          background: #ececec;
+          text-decoration: none;
+          transition: all .25s ease-out; }
+        main aside ul li a:hover {
+          color: #242424;
+          background: #e0e0e0; }
+  main aside.box {
+    float: left;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    width: 25%;
+    background: #e7e7e7;
+    border: 1px dotted black;
+    border-left: 0;
+    line-height: 1.5rem; }
+    @media only screen and (max-width: 668px) {
+      main aside.box {
+        width: 100%;
+        border-right: 0; } }
+  main .content {
+    float: right;
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 75%; }
+    @media only screen and (max-width: 668px) {
+      main .content {
+        width: 100%; } }
+    main .content .news-article {
+      float: left;
+      width: 100%;
+      margin-bottom: 2rem;
+      background: #e2e2e2; }
+      main .content .news-article h1 {
+        margin: 0;
+        padding: .3rem;
+        font-size: 1rem;
+        color: #ececec;
+        background: #265ab4; }
+      main .content .news-article .info {
+        float: left;
+        box-sizing: border-box;
+        padding: .3rem;
+        width: 100%;
+        font-size: .9rem;
+        background: #f1f1f1;
+        border-left: 1px solid white;
+        border-right: 1px solid white; }
+      main .content .news-article .content {
+        float: left;
+        box-sizing: border-box;
+        padding: .3rem;
+        width: 100%;
+        color: #1c1c1c;
+        font-size: .9rem;
+        border: 1px solid white;
+        line-height: 1.5rem; }
+    main .content .news-article:last-child {
+      margin-bottom: 0; }
+
+/**
+ * Styling for the footer portion of the template.
+ */
+footer {
+  float: left;
+  box-sizing: border-box;
+  margin-top: 6rem;
+  width: 100%;
+  min-height: 250px;
+  color: black;
+  font-size: 0.9rem;
+  text-align: center;
+  background: lightgray;
+  line-height: 1.5rem; }
+  @media only screen and (max-width: 768px) {
+    footer {
+      text-align: center; } }
+  footer .container-fixed {
+    padding: 2rem 0; }
+  footer .centered {
+    display: block;
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center; }
+    footer .centered i.fa {
+      font-size: 2rem;
+      letter-spacing: 1rem; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font: 1rem Arial, verdana, sans-serif;
+  color: #242424;
+  background: #f9f9f9; }
+
+a:link, a:active, a:visited {
+  color: #4077d7; }
+
+a:hover {
+  color: #265ab4; }
+
+.container, .container-fixed, .container-fluid {
+  margin: auto;
+  box-sizing: border-box; }
+
+.container-fixed {
+  width: 85%;
+  max-width: 1200px; }
+  @media only screen and (max-width: 668px) {
+    .container-fixed {
+      width: 92%; } }
+
+.container-fluid {
+  width: 85%; }
+
+/*# sourceMappingURL=main.css.map */

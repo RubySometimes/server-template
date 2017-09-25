@@ -50,6 +50,15 @@ $navigation-border: darken($navigation-bg, 10%);
 $navigation-sticky: true;
 $navigation-link-underline: false;
 
+// main
+$main-wrapper-bg: darken($body-background, 5%);
+
+// aside
+$main-aside-color: $body-color;
+$main-aside-color-hover: white;
+$main-aside-background: darken($main-wrapper-bg, 2%);
+$main-aside-background-hover: darken($main-wrapper-bg, 4%);
+
 // header
 $header-bg: darken($body-background, 5%);
 $header-button-background: rgba(0, 0, 0, .7);
